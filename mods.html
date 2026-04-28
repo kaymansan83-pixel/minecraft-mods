@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقع تنزيل المودات</title>
+  <title>سيرفر المودات</title>
+
   <style>
     body {
       margin: 0;
@@ -14,11 +15,11 @@
     }
 
     header {
-      padding: 60px 20px;
+      padding: 80px 20px;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 34px;
       margin-bottom: 10px;
     }
 
@@ -29,53 +30,60 @@
       margin: auto;
     }
 
-    .mods {
-      background: #f4f4f4;
-      color: black;
-      padding: 40px 20px;
-      margin-top: 30px;
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
     }
 
-    .mods a {
-      display: block;
-      margin: 10px auto;
-      padding: 12px;
-      width: 80%;
-      max-width: 400px;
-      background: #2a5298;
-      color: white;
+    a.button {
+      display: inline-block;
+      padding: 16px 22px;
+      background: #ffcc00;
+      color: black;
       text-decoration: none;
-      border-radius: 8px;
+      font-weight: bold;
+      border-radius: 12px;
+      transition: 0.2s;
+      min-width: 220px;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
     }
 
     footer {
+      margin-top: 60px;
       padding: 20px;
       font-size: 14px;
       opacity: 0.8;
     }
   </style>
 </head>
+
 <body>
 
   <header>
-  <h1>مرحبا بكم في موقع تنزيل المودات الخاصة بسيرفري لماينكرافت</h1>
-  <p>هذه المودات خاصة بنسخة ماينكرافت 1.21.11 Fabric</p>
-</header>
+    <h1>مرحبا بكم في موقع مودات السيرفر</h1>
 
-  <div class="mods" id="mods">
-    <h2>روابط تحميل المودات</h2>
+    <p>
+      هذا الموقع مخصص لتنزيل مودات ومودباكات سيرفرات ماينكرافت الخاصة بنا
+      بنسخة 1.21.11 Fabric
+    </p>
 
-    <a href="https://modrinth.com/datapack/veinminer?version=1.21.11&loader=fabric" target="_blank">VeinMiner (Datapack)</a>
-    <a href="https://modrinth.com/mod/fabric-api?version=1.21.11" target="_blank">Fabric API</a>
-    <a href="https://modrinth.com/mod/silk" target="_blank">Silk Mod</a>
-    <a href="https://modrinth.com/mod/fabric-language-kotlin" target="_blank">Fabric Language Kotlin</a>
-    
-   <a href="install.html">الذهاب الى صفحة شرح كيفية تنزيل المودات</a>
-  
-  </div>
+    <div class="buttons">
+      <a class="button" href="server1.html">🟦 سيرفر 1 - المودات</a>
+      <a class="button" href="server2.html">🟩 سيرفر 2 - المودات</a>
+      <a class="button" href="server3.html">🟨 سيرفر 3 - المودات</a>
+      <a class="button" href="modpacks.html">📦 المودباكات</a>
+    </div>
+
+  </header>
 
   <footer>
-    © 2026 - جميع الحقوق محفوظة
+    © 2026 - سيرفر المودات
   </footer>
 
 </body>
